@@ -19,7 +19,7 @@ jobs:
           scope: "@kmylo"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --froze-lockfile
       - name: Publish
         run: pnpm publish
         env:
